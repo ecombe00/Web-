@@ -1,0 +1,597 @@
+html, body{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+background-color: white;
+}
+
+/* header and nav */
+#header{
+width: 100%;
+height: 300px;
+background: url(../image/truelogo.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: 10% 100%;
+   
+
+}
+
+@media(max-width:600px){
+#header{
+height: 10%;
+}
+}
+#header-logo{
+width: 100%;
+height: 100%;
+overflow: hidden;
+border: 1px solid black;
+
+}
+#header img{
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+ul.topnav {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #000;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+display: inline-block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+transition: 0.3s;
+font-size: 25px;
+}
+
+ul.topnav li a:hover {color:#139605;;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+ul.topnav li:not(:first-child) {display: none;}
+ul.topnav li.icon {
+float: right;
+display: inline-block;
+}
+ul.topnav li a {
+font-size: 18px;
+}
+}
+
+@media screen and (max-width:680px) {
+ul.topnav.responsive {position: relative;}
+ul.topnav.responsive li.icon {
+position: absolute;
+right: 0;
+top: 0;
+}
+ul.topnav.responsive li {
+float: none;
+display: inline;
+}
+ul.topnav.responsive li a {
+display: block;
+text-align: left;
+}
+}
+/* second body */
+/* big img */
+.imgwrapper{
+width: 100%;
+height: 600px;
+overflow: hidden;
+background-image: url(../image/mow2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+overflow: hidden;
+
+}
+#imgwrapper-text{
+width: 450px;
+height: 100px;
+background: #1e90ff;
+-webkit-clip-path: polygon(0 0, 75% 0%, 100% 51%, 75% 100%, 0% 100%);
+clip-path: polygon(0 0, 75% 0%, 100% 51%, 75% 100%, 0% 100%);
+margin-top: 200px;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.6);
+padding: 10px;  
+    
+}
+#imgwrapper-text p{
+font-size: 20px;
+color: white;
+
+
+}
+@media(max-width: 800px){
+.imgwrapper{
+background-position: 90% 50%;
+}
+#imgwrapper-text{
+
+}
+}
+@media(max-width: 600px){
+.imgwrapper{
+background-position: 90% 50%;
+}
+#imgwrapper-text{
+
+}
+}
+/* facts */
+.facts-wrapper{
+width: 100%;
+height: 26%;
+border: 1px solid #000;
+background-color: #000;
+padding: 2px 40px 10px 40px;
+color: #fff;
+text-align: center;
+
+}
+.facts-wrapper h2{
+    text-align: center;
+    color:#139605;
+}
+.facts-text-box{
+    width: 700px;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+@media(max-width: 600px){
+    
+    .facts-text-box{
+    width: 330px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 15px;
+}
+}
+
+/* ESTIMATES */
+.quotes-wrapper{
+width: 100%;
+height: 300px;
+border-top: 3px solid black;
+background-image: url(../image/estimate.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+background-position: 40% 40%;
+padding: 10px 0px 10px 0px;
+
+}
+@media(max-width: 600px){
+.quotes-wrapper{
+background-position: 40% 50%;
+}
+}
+#quotes-text-box{
+width: 40%;
+height: 64%;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.4);
+border-radius: 10px;
+
+
+
+}
+#quotes-text-box h1{
+color: aliceblue;
+text-align: center;
+font-size: 60px;
+color:red;
+
+}
+#quotes-text-box p{
+color: #fff;
+text-align: center;
+font-size: 30px;
+}
+@media(max-width: 600px){
+#quotes-text-box{
+width:320px;
+
+}
+#quotes-text-box h1{
+font-size: 40px;
+font-weight: 800;
+}
+#quotes-text-box p{
+font-size: 20px;
+}
+}
+
+/* SERVICES */
+
+#services-wrapper{
+width: 100%;
+height: 675px;
+padding: 10px 10px;
+text-align: center;
+background-image: url(../image/fence2.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+@media screen and (max-width: 840px){
+    #services-wrapper{
+        height: 1000px;
+    }
+  
+  }
+@media screen and (max-width: 740px){
+    #services-wrapper{
+        height: 900px;
+    }
+  
+  }
+
+#services-wrapper h1{
+font-size: 80px;
+color:black;
+font-weight: bold;
+margin-left: auto;
+margin-right: auto;
+color:#fff;
+ width: 100%;
+background: rgb(0, 0, 0);
+background: rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 678px){
+    #services-wrapper{
+        height: 1300px;
+    }
+    #services-wrapper h1{
+        font-size: 50px;
+    }
+  
+  }
+
+#imgwrapper{
+width: 100%;
+background-image: url(../image/woodBack.jpg);
+background-repeat: no-repeat;
+background-size: 2000px 1000px;
+border-bottom: 2px solid black;
+border-top:4px solid black;
+
+}
+@media screen and (max-width:650px){
+    #imgwrapper{
+        width: 100%;
+        height: 1100px;
+        background-size: 2100px 1100px;
+    }
+}
+#click{
+width: 850px;
+height: 35px;
+background-color: #414242;
+color: #fff;
+font-size: 20px;
+border: 1px solid lightgray;
+border-radius: 5px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+-webkit-box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+
+}
+
+#show{
+width: 850px;
+height: 120px;
+background-color: whitesmoke;
+color: black;
+margin-top: -2px;
+margin-left: auto;
+margin-right: auto;
+font-size: 18px;
+border: 1px solid black;
+border-radius: 5px;
+text-align: left;
+font-weight: 377;
+padding-left: 5px;
+
+}
+@media(max-width: 800px){
+#click{
+width: 600px;
+height: 25px;
+font-size: 19px;
+margin-left: auto;
+margin-right: auto;
+
+}
+#show{
+width: 600px;
+height: 25px;
+font-size: 14px;
+
+margin-left: auto;
+margin-right: auto;
+}
+
+
+}
+@media(max-width: 600px){
+#click{
+width: 400px;
+height: 25px;
+font-size: 19px;
+margin-left: auto;
+margin-right: auto;
+
+}
+#show{
+width: 400px;
+height: 25px;
+font-size: 14px;
+margin-left: auto;
+margin-right: auto;
+display: none;
+}
+#services-wrapper{
+padding: 0;
+}
+.wrapper-left{
+margin-top: 30%;
+}
+
+
+}
+#show li{
+text-align: left;
+}
+#click a{
+text-decoration: none;
+color: whitesmoke;
+
+}
+@media( max-width: 600px){
+.perview{
+margin-left: 0;
+}
+}
+
+
+/* PIC GALLEY */
+#image-wrapper p{
+
+font-size: 25px;
+}
+#image-wrapper h1{
+
+font-size: 45px;
+    color: #fff;
+}
+.gallery{
+padding: 30px;
+}
+
+.gallery h1{
+font-size: 75px;
+color:#000;
+}
+.gallery p{
+font-size: 25px;
+color: black;
+}
+.thumbnails img {
+height: 80px;
+border: 4px solid #555;
+padding: 1px;
+margin: 0 10px 10px 0;
+-webkit-box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+}
+
+.thumbnails img:hover {
+cursor:pointer;
+}
+
+.preview img {
+border: 9px solid #555;
+border-radius: 12px;
+padding: 1px;
+width: 800px;
+-webkit-box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+box-shadow: 0px 18px 22px 2px rgba(0,0,0,0.75);
+
+}
+@media(max-width: 600px){
+.preview img{
+border: 3px solid #555;
+width:300px;
+}
+}
+.bbox{
+margin-left: 17%;
+width: 500px;
+
+}
+@media(max-width:600px){
+.bbox{
+padding: 0;
+margin: 0;
+width: 100%;
+}
+}
+/* ABOUT */
+
+#about{
+width: 100%;
+height: 530px;
+border-top: 2px solid black;
+background-color: lightgray;
+padding: 20px 80px 0 80px;
+overflow: scroll;
+
+
+}
+#about h1{
+text-align: center;
+font-size: 50px;
+color:#139605;
+}
+#about p{
+font-size: 19px;
+text-align: center;
+}
+#about img{
+    height: 300px;
+    margin-left: 40%;
+    
+    
+}
+@media(max-width:600px){
+#about{
+overflow: scroll;
+}
+#about img{
+height: 300px;
+margin-left: 0%;
+
+
+}
+    
+}
+
+/* CONTACT */
+#contact{
+width: 100%;
+height: 600px;
+
+text-align: center;
+
+}
+#contact h1{
+font-size: 45px;
+color:#139605;
+}
+#contact-right{
+width:30%;
+height: 40%;
+float: right;
+margin-right: 2%;
+padding: 10px;
+text-align: left;
+
+
+}
+#contact-left{
+width:50%;
+height: 70%;
+float: left;
+margin-right: 4%;
+padding: 10px;
+text-align: left;
+margin-top: 4%;
+overflow: hidden;
+
+}
+#contact-right p{
+font-size: 18px;
+}
+#contact-right a{
+text-decoration: none;
+font-size: 20px;
+}
+@media(max-width: 800px){
+#contact-left{
+display: none;
+}
+}
+@media(max-width:800px){
+#contact-right p{
+font-size: 15px;
+}
+#contact-right a{
+text-decoration: none;
+font-size: 15px;
+}
+#contact-right{
+margin-top: 2%;
+margin-right: 35%;
+}
+}
+@media(max-width:600px){
+#contact-right p{
+font-size: 15px;
+}
+#contact-right a{
+text-decoration: none;
+font-size: 15px;
+}
+#contact-right{
+margin-top: 2%;
+margin-right: 50%;
+}
+}
+
+/* FOOTER */
+.footer{
+width: 100%;
+height: 40px;
+background-color: black;
+color: aliceblue;
+text-align: center;
+background-image: url('../image/blades_of_grass.jpg');
+background-size: cover;
+background-attachment: fixed;
+
+
+}
+#touchScroller
+			{
+				width:41%;
+				height: 330px;
+				position: relative;
+			}
+			
+			/* Replace the last selector for the type(s) of element(s) you have in
+			   your scroller.
+			   If you have images use #touchScroller div.scrollableArea img,
+			   If you have div's use #touchScroller div.scrollableArea div,
+			   if you have links use #touchScroller div.scrollableArea a,
+			   or add several selectors if you have mixed content
+			   ...and so on. */
+			#touchScroller div.scrollableArea a
+			{
+				position: relative;
+				float: left;
+				margin: 0;
+				
+				/* If you don't want the images in the scroller to be selectable, try the following
+				   block of code. It's just a nice feature that prevent the images from
+				   accidentally becoming selected/inverted when the user interacts with the scroller. */
+				-webkit-user-select: none;
+				-khtml-user-select: none;
+				-moz-user-select: none;
+				-o-user-select: none;
+				user-select: none;
+			}
